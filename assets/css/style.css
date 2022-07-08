@@ -1,0 +1,774 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Karla:wght@500&family=Livvic:wght@600&family=Lora:wght@600&family=Overpass:wght@300&family=Poppins:wght@600&family=Rubik:wght@500&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Karla:wght@500&family=Livvic:wght@600&family=Lora:wght@600&family=Montserrat:wght@600&family=Overpass:wght@300&family=Poppins:wght@600&family=Rubik:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Overpass:wght@300&');
+
+
+/* navbar */
+.nav-color{
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .10);
+}
+
+.navbar{
+    padding: 50px 0;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.navbar-toggler i{
+    color: white;
+}
+
+.nav-link::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+
+
+/* BERANDA */
+#beranda{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0 0 0;
+}
+
+.bg{
+    width: 100%;
+    height: 35vh;
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.bg a{
+    margin-top: 20px;
+    background-color: transparent;
+    color: #023047;
+    border-radius: 0;
+    height: 40px;
+    position: relative;
+    font-weight: 600;
+    text-align: end;
+    border: 1px solid #023047;
+}
+
+.bg a:hover{
+    color: #fff;
+    background-color: #023047;
+    background-image: url(../img/icon/download-solid-36.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    border: 1px #023047;
+}
+
+.bg h3{
+    font-weight: 600;
+}
+
+#beranda h1{
+    margin-top: 20%;
+    font-weight: 700;
+}
+
+#beranda p{
+    font-size: 21px;
+}
+
+#beranda a{
+    margin-top: 15px;
+    padding: 8px 10px;
+    height: 45px;
+    font-weight: 600;
+    background-color: #023047;
+    color: #ffffff;
+}
+
+#beranda img{
+    width: 85%;
+    height: 75%;
+    display: block;
+    margin: 40px auto 0;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+
+
+
+/* TENTANG KAMI */
+#about{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -120px;
+}
+
+#about img{
+    width: 85%;
+    height: 70%;
+    /* display: block; */
+    /* margin: 90px auto -80px; */
+    margin: 100px 0 0 0;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.sub-text{
+    position: relative;
+    margin-top: 120px;
+}
+
+.sub-text::before{
+    content: '';
+    position: absolute;
+    /* margin-top: -170px; */
+    /* margin-left: 20px; */
+    margin-top: 10px;
+    height: 6px;
+    width: 60px;
+    background: #023047;
+}
+
+.sub-text h5{
+    margin: 0px 0 10px 70px;
+}
+
+.sub-text h1{
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.sub-text p{
+    font-family: 'open-sans', sans-serif;
+    font-size: 21px;
+}
+
+
+
+
+
+/* LAYANAN */
+#layanan{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 130px;
+    margin-top: -150px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title h1{
+    font-weight: 600;
+}
+
+.box{
+    margin-top: 60px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    padding: 1px 1px;
+    border-radius: 20px;
+    /* background-color: #000; */
+}
+
+.box img{
+    display: block;
+    margin: 30px auto;
+}
+
+.box h4{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
+/* MENGAPA KAMI */
+#why{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #4f772d; */
+    padding-top: 100px;
+    margin-top: -85px;
+    margin-bottom: 40px;
+}
+
+.why-card{
+    margin-top: 30px;
+    width: 300px;
+    height: 360px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.why-card img{
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.why-card h3{
+    text-align: center;
+    padding: 10px 15px 0;
+    margin-top: 10px;
+    font-weight: 600;
+    /* border-top: 3px solid black; */
+}
+
+.why-card p{
+    text-align: center;
+    padding: 5px 20px 0;
+    font-size: 15px;
+}
+
+
+
+
+
+/* PROSES */
+#proses{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #4f772d; */
+    padding-top: 90px;  
+    margin-top: -40px; 
+}
+
+.proses-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.proses-title h1{
+    font-weight: 600;
+}
+
+.proses-accordion{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #023047;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    transition: .5s;
+}
+
+.proses-accordion .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    background-color: #023047;
+    color: #ffffff;
+    margin: 0 12px 0 7px;
+}
+
+.proses-accordion h4{
+    font-size: 22px;
+    margin: -5px 0 0 0;
+    font-weight: 600;
+    color: #023047;
+}
+
+.icon{
+    margin: -3px 8px 3px auto;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon/chevron-down-regular-36.png) no-repeat;
+    transition: all .3s ease-in;
+}
+
+.active .icon{
+    background: url(../img/icon/chevron-up-regular-36.png) no-repeat;
+}
+
+.active{
+    background-color: #023047;
+    transition: .5s;
+}
+
+.active .circle{
+    background-color: #fff;
+    color: #023047;
+    transition: .3s;
+}
+
+.active h4{
+    color: #fff;
+}
+
+.panel{
+    padding: 0 100px 0 15px;
+    border-left: 3px solid #023047;
+    margin-left: 32px;
+    font-size: 16px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .2s ease-in;
+}
+
+.panel p{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#proses button{
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 2px solid #023047;
+    background-color: transparent;
+    width: 200px;
+    height: 45px;
+    /* font-family: 'Livvic', sans-serif; */
+    color: #023047;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+#proses button:hover{
+    border: none;
+    background-color: #023047;
+    color: #fff;
+}
+
+#proses a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* PORTOFOLIO */
+#portofolio{
+    width: 100%;
+    min-height: 90vh;
+    /* background-color: #4f772d; */
+    padding-top: 100px;
+    margin-top: -20px;
+}
+
+#portofolio-pb{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    margin-top: -20px;
+}
+
+.porto-title{
+    /* text-align: center; */
+    margin-bottom: 10px;
+}
+
+.porto-pembangunan-title{
+    text-align: right;
+}
+
+.porto-pembangunan-title h1{
+    font-weight: 600;
+}
+
+.porto-title h1{
+    font-weight: 600;
+}
+
+.card-porto{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-overlay{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    display: none;
+}
+
+.card-img-overlay h3, .card-img-overlay p{
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    position: relative;
+    top: 130px;
+    text-shadow: 1px 1px rgba(5, 5, 5, .5);
+}
+
+.card-porto:hover .card-img-overlay{
+    display: block;
+}
+
+.card-porto img{
+    transform: scale(1);
+    transition: all .3s ease-out;
+}
+
+.card-porto:hover img{
+    transform: scale(1.1);
+    transition: all .3s ease-out;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 100;
+    text-align: center;
+    padding: 130px 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s ease-out;
+}
+
+.overlay img{
+    width: 60%;
+}
+
+.overlay:target{
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, .8);
+    transition: all .2s ease-in;
+}
+
+.overlay a span{
+    position: absolute;
+    top: 110px;
+    right: 220px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+
+
+/* KONTAK */
+.kontak{
+    width: 100%;
+    min-height: 35vh;
+    background-color: #023047;
+    border-top-left-radius: 100px;
+    padding: 100px 100px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.kontak h1, .kontak h4{
+    font-weight: 600;
+}
+
+
+
+
+
+/* FOOTER */
+#footer{
+    width: 100%;
+    min-height: 55vh;
+    padding: 50px 0 0 0;
+}
+
+#footer a{
+    font-size: 23px;
+}
+
+#footer p{
+    margin-top: 10px;
+}
+
+#footer h4{
+    margin: 7px 0 22px;
+    font-weight: 600;
+}
+
+#footer i{
+    margin: 5px;
+}
+
+.sosmed i{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* XSMALL */
+@media (max-width: 575.98px) {
+    /* BERANDA */
+    #beranda{
+        min-height: 700px;
+    }
+
+    #beranda img{
+        width: 65%;
+        margin: 50px auto 5px; 
+    }
+
+    #beranda h1{
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    #beranda p{
+        font-size: 21px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #beranda a{
+        display: block;
+        margin: auto 50px;
+        margin-top: 30px;
+    }
+
+
+    /* TENTANG KAMI */
+    #about{
+        margin: 30px 0 0 0;
+    }
+
+    #about img{
+        width: 65%;
+        height: 85%;
+        display: block;
+        margin: 30px auto 0;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .sub-text{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .sub-text::before{
+        display: none;
+    }
+
+    .sub-text h5{
+        margin: 0 0 10px 0;
+    }
+
+    .sub-text h1{
+        font-weight: 700;
+    }
+
+    /* LAYANAN */
+    .title{
+        margin: 50px 0 0 0;
+    }
+
+    .title h1{
+        font-weight: 700;
+    }
+
+    .box{
+        margin-top: 30px;
+    }
+
+    /* MENGAPA KAMI */
+    .why-card{
+        margin-top: 10px;
+    }
+
+    /* PROSES */
+    #proses{
+        padding-top: 0;
+        margin: 60px 0 0 0;
+        min-height: 700px;   
+    }
+
+    .proses-title h1{
+        font-weight: 700;
+    }
+
+    .panel{
+        padding: 0 30px 0 15px;
+    }
+
+    /* PORTOFOLIO */
+    .porto-title h1{
+        font-weight: 700;
+    } 
+
+    .porto-pembangunan-title h1{
+        font-weight: 700;
+    }
+
+    /* .overlay:target{
+        margin-left: -50px;
+    } */
+    
+    .overlay a span{
+        top: 250px;
+        right: 170px;
+    } 
+
+    /* KONTAK */
+    .kontak{
+        margin: 0;
+    }
+
+    .kontak h1{
+        margin-bottom: 40px;
+    }
+
+    .kontak h5{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* BERANDA */
+    #beranda{
+        min-height: 700px;
+    }
+
+    #beranda img{
+        width: 65%;
+        margin: 50px auto 5px; 
+    }
+
+    #beranda h1{
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    #beranda p{
+        font-size: 21px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #beranda a{
+        display: block;
+        margin: auto 50px;
+        margin-top: 30px;
+    }
+
+
+    /* TENTANG KAMI */
+    #about{
+        margin: 30px 0 0 0;
+    }
+    
+    #about img{
+        width: 65%;
+        height: 85%;
+        display: block;
+        margin: 30px auto 0;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    
+    .sub-text{
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .sub-text::before{
+        display: none;
+    }
+    
+    .sub-text h5{
+        margin: 0 0 10px 0;
+    }
+    
+    .sub-text h1{
+        font-weight: 700;
+    }
+
+    
+    /* LAYANAN */
+    .title{
+        margin: 70px 0 0 0;
+    }
+
+    .title h1{
+        font-weight: 700;
+    }
+
+    .box{
+        margin-top: 30px;
+    }
+
+
+    /* PORTOFOLIO */
+    .porto-title h1{
+        font-weight: 700;
+    } 
+
+    /* KONTAK */
+    .kontak{
+        margin: 0;
+    }
+
+    .kontak h1{
+        margin-bottom: 40px;
+    }
+
+    .kontak h5{
+        margin-bottom: 30px;
+    }
+}
